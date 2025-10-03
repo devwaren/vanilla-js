@@ -1,0 +1,48 @@
+{
+  "name": "@devwareng/vanilla-js",
+  "version": "1.7.7",
+  "description": "Framework-less JavaScript hooks for SPA development.",
+  "author": "Waren Arapoc Gador",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup index.mjs --minify --format esm,cjs --outDir dist && node genRoute.js"
+  },
+  "keywords": [
+    "javascript",
+    "vanilla",
+    "hooks",
+    "spa",
+    "frameworkless",
+    "utilities",
+    "frontend"
+  ],
+  "dependencies": {
+    "brython": "^3.13.2",
+    "dompurify": "^3.2.6",
+    "fs-extra": "^11.3.1",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^4.0.0",
+    "lodash-es": "^4.17.21",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.5",
+    "xss": "^1.0.15",
+    "zustand": "^5.0.7"
+  },
+  "devDependencies": {
+    "animate.css": "^4.1.1",
+    "process": "^0.11.10",
+    "tsup": "^8.5.0"
+  }
+}
