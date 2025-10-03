@@ -3,6 +3,7 @@ import { defineConfig } from "tsup";
 export default defineConfig({
     entry: ["index.mjs"],
     format: ["esm", "cjs"],
+    cts: true,
     minify: true,
     target: "esnext",
     bundle: true,
